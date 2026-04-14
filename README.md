@@ -1,20 +1,36 @@
-# 🚀 SSH Quick Connect (sshm)
+# 🚀 SSH Quick Connect (sshm)  
+### Fast CLI SSH Alias Manager  
 
-A fast, interactive CLI tool to manage and connect to SSH hosts defined in your `~/.ssh/config`.
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0-blue.svg">
+  <img src="https://img.shields.io/badge/bash-cli-green.svg">
+  <img src="https://img.shields.io/badge/license-MIT-yellow.svg">
+  <img src="https://img.shields.io/badge/status-active-success.svg">
+</p>
 
-> Built for developers who prefer speed, clarity, and zero friction in terminal workflows.
+<p align="center">
+  <b>Fast • Minimal • Zero-friction SSH Workflow</b>
+</p>
+
+---
+
+## 📌 Overview
+
+**sshm** is a lightweight CLI tool that lets you quickly connect to SSH hosts defined in your `~/.ssh/config`.
+
+No typing. No remembering aliases. Just select and connect.
 
 ---
 
 ## ✨ Features
 
-- 🔍 Auto-detects all SSH aliases from config
-- 📋 Interactive menu with numeric selection
-- 🎨 Clean terminal UI with colors
-- ⚡ Fast connection with timeout handling
-- 🧠 Smart parsing (handles multiple hosts per line)
-- 🧹 Duplicate removal
-- 🛑 Safe exit option
+- 🔍 Auto-detects SSH aliases  
+- 📋 Interactive numbered menu  
+- ⚡ Fast connection with timeout  
+- 🧠 Smart parsing (multiple hosts per line)  
+- 🧹 Duplicate removal  
+- 🎨 Clean terminal UI  
+- 🛑 Safe exit  
 
 ---
 
@@ -26,29 +42,21 @@ cd sshm
 chmod +x sshm.sh
 ````
 
-(Optional) Move to global path:
+(Optional)
 
 ```bash
 mv sshm.sh ~/.local/bin/sshm
-```
-
-Now you can run:
-
-```bash
-sshm
 ```
 
 ---
 
 ## ⚙️ Usage
 
-Simply run:
-
 ```bash
 sshm
 ```
 
-You’ll see a menu like:
+Example:
 
 ```
 🚀 SSH Quick Connect
@@ -58,8 +66,6 @@ You’ll see a menu like:
  3) dev-box
  4) Quit
 ```
-
-Select a number to connect instantly.
 
 ---
 
@@ -75,60 +81,58 @@ Host dev prod
     User devuser
 ```
 
-✔ Automatically detects:
+✔ Detects:
 
-* `server1`
-* `dev`
-* `prod`
+* server1
+* dev
+* prod
 
 ---
 
 ## 🛠️ How It Works
 
 * Parses `~/.ssh/config`
-* Extracts all valid `Host` entries (excluding wildcards)
-* Builds a dynamic menu
+* Extracts valid `Host` entries
+* Builds interactive menu
 * Connects using `ssh <alias>`
 
 ---
 
-## 🔒 Safety & Limitations
+## 🔒 Notes
 
-* No root access required
 * Does not modify SSH config
-* Depends on system `ssh` client
+* Requires system `ssh`
 * Wildcard (`*`) hosts are ignored
 
 ---
 
-## 🚀 Future Improvements
+## 🚀 Future Plans
 
-* [ ] 🔎 Fuzzy search with `fzf`
-* [ ] 📜 Show HostName/User preview
-* [ ] 🕘 Recent connections history
-* [ ] ⚡ Direct connect: `sshm <alias>`
-* [ ] 🌐 Remote config support
-
----
-
-## 📁 Project Structure
-
-```
-sshm/
-├── sshm.sh
-└── README.md
-```
-
----
-
-## 👨‍💻 Author
-
-**Abhrankan Chakrabarti**
-📧 [abhrankan@gmail.com](mailto:abhrankan@gmail.com)
-🔗 [https://github.com/Abhrankan-Chakrabarti](https://github.com/Abhrankan-Chakrabarti)
+* 🔎 Fuzzy search (`fzf`)
+* 📜 Show host details
+* 🕘 Recent connections
+* ⚡ Direct connect (`sshm <alias>`)
 
 ---
 
 ## 📜 License
 
-MIT License
+MIT License © 2026 Fox Hackerz
+
+---
+
+## 🦊 About Fox Hackerz
+
+We build tools focused on:
+
+* Cybersecurity
+* Automation
+* Developer tools
+
+📌 GitHub: [https://github.com/foxhackerzdevs](https://github.com/foxhackerzdevs)
+
+---
+
+<p align="center">
+  <b>🦊 Join the pack. Build. Break. Secure.</b>
+</p>
