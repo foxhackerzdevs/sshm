@@ -37,7 +37,7 @@ No typing. No remembering aliases. Just select and connect.
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/Abhrankan-Chakrabarti/sshm.git
+git clone https://github.com/foxhackerzdevs/sshm.git
 cd sshm
 chmod +x sshm.sh
 ````
